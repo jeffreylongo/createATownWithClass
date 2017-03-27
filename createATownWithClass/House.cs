@@ -23,7 +23,7 @@ namespace createATownWithClass
         //Length as Double
         public double Length { get; set; }
         //Square Footage as a Read Only, calculated field
-        public int SquareFootage { get; }
+        public double SquareFootage { get { return Length * Width; } } 
         //Floors as integer
         public int Floors { get; set; }
         //BedRooms as integer
@@ -31,12 +31,21 @@ namespace createATownWithClass
         //BathRooms as integer
         public int BathRooms { get; set; }
         //Volume as a Read Only, calculated field
-        public int Volume { get; }
+        public double Volume { get { return Length * Width * Height; } }
         //FullAddress as a Read only, string value that is made of the Address1, Address2, city, state, zip Properties
         public string FullAddress { get; set; }
         //Current Occupants as read only integer
-        public int CurrentOccupants { get; }
+        public int CurrentOccupants { get { return _CurrentOccupants; } }
         //IncreateOccupants as a public method that increments the CurrentOccupants by 1
+        private int _CurrentOccupants;
+        public void IncreaseCurrentOccupants()
+        {
+            _CurrentOccupants++;
+        }
         //DecreaseOccupants as a public method that decrements the CurrentOccupants by 1
+        public void DecreaseCurrentOccupants()
+        {
+            _CurrentOccupants--;
+        }
     }
 }
