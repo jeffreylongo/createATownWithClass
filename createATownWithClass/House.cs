@@ -12,9 +12,9 @@ namespace createATownWithClass
         public string Name { get; set; }
         //BuildingType as string, that is set in the constructor
         public string BuildingType { get; set; }
-        public House (string btype)
+        public House (string bType)
         {
-            BuildingType = btype;
+            this.BuildingType = bType;
         }
         //NumberOfRoom as an int
         public int NumberOfRoom { get; set; }

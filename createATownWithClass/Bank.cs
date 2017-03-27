@@ -14,7 +14,7 @@ namespace createATownWithClass
         public string BuildingType { get; set; }
         public Bank (string btype)
         {
-            BuildingType = btype;
+            this.BuildingType = btype;
         }
         //NumberOfRoom as an int
         public int NumberOfRoom { get; set; }
