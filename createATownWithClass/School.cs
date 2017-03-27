@@ -12,6 +12,10 @@ namespace createATownWithClass
         public string Name { get; set; }
         //BuildingType as string, that is set in the constructor
         public string BuildingType { get; set; }
+        public School (string btype)
+        {
+            BuildingType = btype;
+        }
         //NumberOfRoom as an int
         public int NumberOfRoom { get; set; }
         //ConstructionMaterial as a string
