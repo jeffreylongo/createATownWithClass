@@ -21,12 +21,14 @@ namespace createATownWithClass
             
 
             List<Bank> banks = new List<Bank>();
-            Bank bankOne = new Bank();
-            Bank bankTwo = new Bank();
+            Bank bankOne = new Bank("brick");
+            Bank bankTwo = new Bank("teepee");
+            Bank bankThree = new Bank("wood");
 
             List<School> schools = new List<School>();
-            School schoolOne = new School;
-            School schoolTwo = new School;
+            School schoolOne = new School("wood");
+            School schoolTwo = new School("brick");
+            School schoolThree = new School("concrete");
         }
     }
 }
