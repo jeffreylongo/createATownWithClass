@@ -54,14 +54,24 @@ namespace createATownWithClass
         public double AmountOfMoney { get { return _AmountOfMoney; } }
         //DepositMoney as a public method, that modifies the AmountOfMoney
         private double _AmountOfMoney;
-        public void IncreaseAmountOfMoney()
+        public void IncreaseAmountOfMoney(double amount)
         {
-            _AmountOfMoney+=;
+            _AmountOfMoney+= amount;
         }
         //WithdrawMoney as a public method, that modifies the AmountOfMoney
-        public void DecreaseAmouintOfMoney()
+        public void DecreaseAmountOfMoney(double amount)
         {
-            _AmountOfMoney -=;
+            _AmountOfMoney-= amount;
+        }
+        //this is the display name method that should display the property name
+        public void DisplayName()
+        {
+            Console.WriteLine(Name);
+        }
+        //this is the to string method that should return $"{BuildingType} : {Name}"
+        public override string ToString()
+        {
+            return $"{BuildingType} : {Name}";
         }
     }
 }

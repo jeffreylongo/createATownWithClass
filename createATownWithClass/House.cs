@@ -55,12 +55,12 @@ namespace createATownWithClass
         //this is the display name method that should display the property name
         public void DisplayName()
         {
-
+            Console.WriteLine(Name);
         }
         //this is the to string method that should return $"{BuildingType} : {Name}"
-        public void ToString()
+        public override string ToString()
         {
-            return $"{BuildingType} : {Name}".
+            return $"{BuildingType} : {Name}";
         }
     }
 }

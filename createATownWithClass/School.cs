@@ -37,7 +37,16 @@ namespace createATownWithClass
         //Current Occupants as read only integer
         public int CurrentOccupants { get; }
         //IncreateOccupants as a public method that increments the CurrentOccupants by 1
+        private int _CurrentOccupants;
+        public void IncreaseCurrentOccupants()
+        {
+            _CurrentOccupants++;
+        }
         //DecreaseOccupants as a public method that decrements the CurrentOccupants by 1
+        public void DecreaseCurrentOccupants()
+        {
+            _CurrentOccupants--;
+        }
         //NumberOfStudents as int
         public int NumberOfStudents { get; set; }
         //InSession as Boolean
@@ -45,5 +54,15 @@ namespace createATownWithClass
         //NumberOfTeachers as a Integer
         public int NumberOfTeachers { get; set; }
         //TeacherStudentRatio as a method that returns a string in the format ${teacher}:{student}
+        //this is the display name method that should display the property name
+        public void DisplayName()
+        {
+            Console.WriteLine(Name);
+        }
+        //this is the to string method that should return $"{BuildingType} : {Name}"
+        public override string ToString()
+        {
+            return $"{BuildingType} : {Name}";
+        }
     }
 }
