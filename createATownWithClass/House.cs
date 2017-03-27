@@ -52,5 +52,15 @@ namespace createATownWithClass
         {
             _CurrentOccupants--;
         }
+        //this is the display name method that should display the property name
+        public void DisplayName()
+        {
+
+        }
+        //this is the to string method that should return $"{BuildingType} : {Name}"
+        public void ToString()
+        {
+            return $"{BuildingType} : {Name}".
+        }
     }
 }

@@ -31,11 +31,25 @@ namespace createATownWithClass
         //Volume as a Read Only, calculated field
         public int Volume { get; set; }
         //FullAddress as a Read only, string value that is made of the Address1, Address2, city, state, zip Properties
-        public string FullAddress { get; }
+        public string FullAddress { get { return Address1 + Address2 + City + State + Zip; } }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zip { get; set; }
         //Current Occupants as read only integer
-        public int CurrentOccupants { get; set; }
+        public int CurrentOccupants { get { return _CurrentOccupants; } }
         //IncreateOccupants as a public method that increments the CurrentOccupants by 1
+        private int _CurrentOccupants;
+        public void increaseCurrentOccupants()
+        {
+            _CurrentOccupants++;
+        }
         //DecreaseOccupants as a public method that decrements the CurrentOccupants by 1
+        public void decreaseCurrentOccupants()
+        {
+            _CurrentOccupants--;
+        }
         //AmountOfMoney as private Double
         private int AmountOfMoney { get; set; }
         //DepositMoney as a public method, that modifies the AmountOfMoney
