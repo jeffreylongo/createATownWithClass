@@ -19,16 +19,21 @@ namespace createATownWithClass
             houses.Add(houseTwo);
             houses.Add(houseThree);
             
-
             List<Bank> banks = new List<Bank>();
             Bank bankOne = new Bank("brick");
             Bank bankTwo = new Bank("teepee");
             Bank bankThree = new Bank("wood");
+            banks.Add(bankOne);
+            banks.Add(bankTwo);
+            banks.Add(bankThree);
 
             List<School> schools = new List<School>();
             School schoolOne = new School("wood");
             School schoolTwo = new School("brick");
             School schoolThree = new School("concrete");
+            schools.Add(schoolOne);
+            schools.Add(schoolTwo);
+            schools.Add(schoolThree);
         }
     }
 }
