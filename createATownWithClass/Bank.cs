@@ -51,8 +51,17 @@ namespace createATownWithClass
             _CurrentOccupants--;
         }
         //AmountOfMoney as private Double
-        private int AmountOfMoney { get; set; }
+        public double AmountOfMoney { get { return _AmountOfMoney; } }
         //DepositMoney as a public method, that modifies the AmountOfMoney
+        private double _AmountOfMoney;
+        public void IncreaseAmountOfMoney()
+        {
+            _AmountOfMoney+=;
+        }
         //WithdrawMoney as a public method, that modifies the AmountOfMoney
+        public void DecreaseAmouintOfMoney()
+        {
+            _AmountOfMoney -=;
+        }
     }
 }
