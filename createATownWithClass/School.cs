@@ -9,24 +9,41 @@ namespace createATownWithClass
     class School
     {
         //Name as a string
+        public string Name { get; set; }
         //BuildingType as string, that is set in the constructor
+        public string BuildingType { get; set; }
         //NumberOfRoom as an int
+        public int NumberOfRoom { get; set; }
         //ConstructionMaterial as a string
+        public int ConstructionMaterial { get; set; }
         //Height as double
+        public double Height { get; set; }
         //Width as double
+        public double Width { get; set; }
         //Length as Double
+        public double Length { get; set; }
         //Square Footage as a Read Only, calculated field
+        public int SquareFootage { get; }
         //Floors as integer
+        public int Floors { get; set; }
         //Classrooms as integer
+        public int Classrooms { get; set; }
         //BathRooms as integer
+        public int BathRooms { get; set; }
         //Volume as a Read Only, calculated field
+        public int Volume { get; set; }
         //FullAddress as a Read only, string value that is made of the Address1, Address2, city, state, zip Properties
+        public string FullAddress { get; }
         //Current Occupants as read only integer
+        public int CurrentOccupants { get; }
         //IncreateOccupants as a public method that increments the CurrentOccupants by 1
         //DecreaseOccupants as a public method that decrements the CurrentOccupants by 1
         //NumberOfStudents as int
+        public int NumberOfStudents { get; set; }
         //InSession as Boolean
+        public bool Insession { get; set; }
         //NumberOfTeachers as a Integer
+        public int NumberOfTeachers { get; set; }
         //TeacherStudentRatio as a method that returns a string in the format ${teacher}:{student}
     }
 }
